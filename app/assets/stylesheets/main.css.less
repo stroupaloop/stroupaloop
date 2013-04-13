@@ -28,19 +28,29 @@ body{
 	font-family: 'Noto Sans', sans-serif;
 }
 
-#wrap{
-	min-height:100%;
-	height: auto !important;
-	margin:0 0 -89px;
-}
-#push{
-	height:60px;
-}
+
 
 #footer{
 	padding-top: 10px;
 	padding-bottom:1px;
 	background: none repeat scroll 0 0 @grayDark;
+	ul{
+		margin-left:-5px;
+		li{
+			display:inline-block;
+			vertical-align: middle;
+			a{
+				text-decoration:none;
+				color:@grayLighter;
+			}
+			a:hover{
+				color:@gray;
+			}
+		}
+	}
+}
+#social-media{
+	padding-left:5px;
 	ul{
 		margin-left:-5px;
 		li{
@@ -73,7 +83,7 @@ body{
 .subtext{
 	color:@grayLight;
 }
-.well{
+.well.top{
 	border-color:rgb(34,34,34);
 	background-color:rgba(34,34,34,0.8);
 	border-bottom-right-radius:0px;
@@ -83,7 +93,7 @@ body{
 	}
 }
 
-h1{
+h2{
 	color:@grayLighter;
 }
 
@@ -119,18 +129,7 @@ ul.social-media{
 	}
 }
 
-.accordion{
-	padding-top:400px;
-	p{
-		color:@grayLighter;
-	}
-	a{
-		color:rgb(81,197,255);
-	}
-	a:hover{
-		color:rgb(66,166,216);
-	}
-}
+
 .accordion-heading{
 	h3{
 		color:@white;
@@ -148,6 +147,7 @@ ul.social-media{
 	p{
 		color:@grayDarker;
 	}
+	margin-bottom:30px;
 }
 .accordion-group{
 	border:0px;
@@ -175,4 +175,80 @@ ul.social-media{
 
 .thumbnail{
 	background-color:@grayLighter;
+}
+
+#proj{
+	margin-bottom:0px;
+}
+
+// desktop (all)
+@media (min-width: 980px){
+	#wrap{
+	min-height:100%;
+	height: auto !important;
+	margin:0 0 -89px;
+	}
+	#push{
+		height:60px;
+	}
+	.accordion{
+	padding-top:400px;
+	p{
+		color:@grayLighter;
+	}
+	a{
+		color:rgb(81,197,255);
+	}
+	a:hover{
+		color:rgb(66,166,216);
+	}
+}
+}
+
+// tablet
+@media (max-width: 979px) and (min-width: 768px){
+	#wrap{
+	min-height:100%;
+	height: auto !important;
+	margin:0 0 -59px;
+	}
+	#push{
+		height:60px;
+	}
+	.well.top{
+		margin-top:30px;
+	}
+	.accordion{
+	padding-top:300px;
+	p{
+		color:@grayLighter;
+	}
+	a{
+		color:rgb(81,197,255);
+	}
+	a:hover{
+		color:rgb(66,166,216);
+	}
+}
+}
+
+// tablet and phone
+@media (max-width: 979px){
+
+}
+
+// phone interim
+@media (min-width: 451px) and (max-width: 767px){
+
+}
+
+// phone
+@media (max-width: 767px){
+	.well.top{
+		margin-top:30px;
+	}
+	#commonkey-tab{
+		padding-left:10px;
+	}
+
 }
