@@ -43,28 +43,21 @@
 
 	<div id="wrap">
 		<%= yield %>
-		<div id="push"></div>
 	</div>
-	<div id="footer">
-		<!-- Connect -->
-		<div class="container">
-			<div class="row">
-				<div class="span12">
-		            <ul class="social-media center">
-		            	<!-- Twitter -->
-		             	<li><a target="_blank" href="https://twitter.com/stroupaloop" title="Follow @stroupaloop on Twitter"><i class="icon-twitter icon-large"></i></a></li>
-		             	<!-- Facebook Page -->
-		             	<li><a target="_blank" href="https://facebook.com/pages/CommonKey/424107320970800" title="Like us on Facebook"><i class="icon-facebook icon-large"></i></a></li>
-		             	<!-- LinkedIn -->
-		             	<li><a target="_blank" href="www.linkedin.com/pub/andrew-stroup/20/236/317/" title="+1 us on Google+"><i class="icon-linkedin icon-large"></i></a></li>
-		             	<!-- Email -->
-		             	<li><a target="_blank" href="mailto:stroupaloop@gmail.com"><i class="icon-envelope-alt icon-large"></i></a></li>
-
-		            </ul>
-		        </div>
-		    </div>
-		</div>
-	</div>
+	<div id="push"></div>
 	<%= javascript_include_tag "application" %>
+	<div id="footer" class="center">
+		<ul id="social-media">
+	    	<li><!-- Twitter -->
+	        	<a target="_blank" href="https://twitter.com/stroupaloop" title="Follow @stroupaloop on Twitter"><i class="icon-twitter icon-large"></i></a></li>
+
+	      	<li><!-- LinkedIn -->
+	        	<a target="_blank" href="http://www.linkedin.com/pub/andrew-stroup/20/236/317" title="Connect with me on LinkedIn"><i class="icon-linkedin icon-large"></i></a></li>
+
+	      	<li><!-- Email -->
+	        	<a target="_blank" href="mailto:stroupaloop@gmail.com" title="Email me"><i class="icon-envelope-alt icon-large"></i></a></li>
+
+	    </ul>
+	</div>
 </body>
 </html>

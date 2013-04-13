@@ -3,27 +3,66 @@ html, body{
 }
 body{
 	padding-top:30px;
+	background: url("2012-12-15 08.57.11.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .center{
 	text-align:center;
 }
+.right{
+	text-align:right;
+}
+
+
 
 @import "twitter/bootstrap/bootstrap";
 @import "twitter/bootstrap/responsive";
 
-
-
 #wrap{
 	min-height:100%;
 	height: auto !important;
-	margin:0 0 -30px;
+	margin:0 0 -89px;
 }
 #push{
 	height:60px;
 }
+
 #footer{
-	background-color:@grayDark;
 	padding-top: 10px;
+	padding-bottom:1px;
+	background: none repeat scroll 0 0 @grayDark;
+	ul{
+		margin-left:-5px;
+		li{
+			display:inline-block;
+			vertical-align: middle;
+			a{
+				text-decoration:none;
+				color:@grayLighter;
+			}
+			a:hover{
+				color:@gray;
+			}
+		}
+	}
+}
+
+#projects{
+	background: none repeat scroll 0 0 rgb(255,153,145);
+	padding-top: 10px;
+	margin-top: 250px;
+}
+#recognition{
+	background: none repeat scroll 0 0 rgb(255,153,145);
+	padding-top: 10px;
+}
+
+.well{
+	background-color:rgba(242,242,242,0.8);
+	border-radius:4 4 0 0px;
 }
 
 ul.affiliations{
@@ -31,14 +70,26 @@ ul.affiliations{
 	li{
 	}
 }
-
+ul.projects{
+	list-style:none;
+	margin-bottom:0px;
+	margin-left:0px;
+	li{
+		display:inline-block;
+	}
+}
+a:hover{
+	text-decoration:none;
+}
 ul.social-media{
+	padding-left:0px;
+	margin-left:0px;
 	list-style:none;
 	li{
 		display:inline-block;
 		a{
 			text-decoration:none;
-			color:@white;
+			color:@grayDarker;
 		}
 		a:hover{
 			color:@grayLight;
@@ -46,9 +97,49 @@ ul.social-media{
 	}
 }
 
+.accordion{
+	padding-top:500px;
+	p{
+		color:@grayLighter;
+	}
+	a{
+		color:rgb(81,197,255);
+	}
+	a:hover{
+		color:rgb(66,166,216);
+	}
+}
+.accordion-heading{
+	h3{
+		color:@white;
+		line-height:26px;
+	}
+	:hover{
+		color:@grayLighter;
+	}
+}
+.accordion-body{
+	margin-top:-22px;
+}
+.accordion-inner{
+	background-color:rgba(34,34,34,0.8);
+	p{
+		color:@grayLighter;
+	}
+}
 .accordion-group{
 	border:0px;
 }
 .accordion-toggle{
 	text-align:right;
+}
+
+
+.icon-linkedin, .icon-enevelope-alt{
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.thumbnail{
+	background-color:@grayLighter;
 }
