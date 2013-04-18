@@ -193,16 +193,32 @@ ul.social-media{
 	}
 	.accordion{
 	padding-top:400px;
-	p{
-		color:@grayLighter;
-	}
-	a{
-		color:rgb(81,197,255);
-	}
-	a:hover{
-		color:rgb(66,166,216);
+		p{
+			color:@grayLighter;
+		}
+		a{
+			color:rgb(81,197,255);
+		}
+		a:hover{
+			color:rgb(66,166,216);
+		}
 	}
 }
+
+// large desktop
+@media (min-width: 1200px) {
+	iframe{
+		width:310px;
+		height:199px;
+	}
+}
+
+// small desktop
+@media (min-width: 980px) and (max-width: 1199px) {
+		iframe{
+		width:250px;
+		height:160px;
+	}
 }
 
 // tablet
