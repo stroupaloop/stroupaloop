@@ -4,7 +4,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><%= content_for?(:title) ? yield(:title) : "Andrew Stroup | Just your typical Asian farmer" %></title>
+	<title><%= content_for?(:title) ? yield(:title) : "stroupaloop | Just your typical Asian farmer" %></title>
+	<META name="description" content="You've reached the personal landing page of Andrew Stroup. Big Brain Theorist, entrepreneur, maker, strategist, enginerd, gamer, cyclist"/>
+
     <%= csrf_meta_tags %>
 
 	<%= stylesheet_link_tag    "application", :media => "all" %>
@@ -14,9 +16,9 @@
 	<!-- suppose to support Facebook images -->
 	<meta property="og:url" content="http://stroupaloop.com" />
 	<meta  property="og:image" content="http://stroupaloop.com/assets/fb-image-2.png" />
-	<meta property="og:title" content="Andrew Stroup | Just your typical Asian farmer" />
-	<meta property="og:site_name" content="Andrew Stroup(aloop)" />
-	<meta property="og:description" content="Big Brain Theorist, entrepreneur, maker, strategist, enginerd, gamer, cyclist" />
+	<meta property="og:title" content="stroupaloop | Just your typical Asian farmer" />
+	<meta property="og:site_name" content="stroupaloop" />
+	<meta property="og:description" content="Personal landing page of Andrew Stroup. Big Brain Theorist, entrepreneur, maker, strategist, enginerd, gamer, cyclist" />
 
     <link href="<%=asset_path('favicon-stroupaloop.ico')%>" rel="shortcut icon" type"image/x-icon"/>
 
