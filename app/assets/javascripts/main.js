@@ -24,15 +24,21 @@ $(document).ready(function(){
 
     $('#nav').localScroll();
 
+    // suppose to change out the image on hover
+    $('#first-bubble').mouseenter(function(){
+    });
+    $('#first-bubble').mouseleave(function(){
+    });
 
-    // Google Analytics (moved from application.html.erb)
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-40197345-1', 'stroupaloop.com');
-      ga('send', 'pageview');
-
+    $('.icon-chevron-down').each(function() {
+    var elem = $(this);
+    setInterval(function() {
+        if (elem.css('visibility') == 'hidden') {
+            elem.css('visibility', 'visible');
+        } else {
+            elem.css('visibility', 'hidden');
+        }    
+    }, 500);
+});
 
 });

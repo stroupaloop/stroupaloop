@@ -57,7 +57,7 @@ http://www.gnu.org/licenses/gpl.html
 		var pos = $window.scrollTop(); //scrollbar position
 
 		if($firstBG.hasClass("inview")){
-			$firstBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 900, 0.3)});
+			$firstBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 900, 0.4)});
 		}
 		//if the second section is in view...
 		if($secondBG.hasClass("inview")){

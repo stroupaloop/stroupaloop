@@ -52,7 +52,10 @@ h2{
 }
 
 #header{
-	padding-left:800px;
+	margin-bottom:10px;
+}
+#header h1{
+	margin-top:10px;
 }
 #header h1, #pixels{
 	color: #48941A;
@@ -94,15 +97,15 @@ h2{
 
 #header{
 	background: white;
-	height: 120px;	
+	height: 100px;	
 }
 
 #intro{
-	background:url('headshot-1.jpg') 50% 0 no-repeat fixed;
+	background:url('headshot-1.jpg') 50% -37.5% no-repeat fixed;
 	color: white;
 	height: 800px;
 	margin: 0;
-	padding: 180px 0 0 0;
+	padding: 160px 0 0 0;
 }
 
 #second{
@@ -126,14 +129,14 @@ h2{
 }
 
 #third{
-	background: url('thirdBG.jpg') 50% 0 no-repeat fixed;
+	background: url('kal-shot.jpg') 50% 0 no-repeat fixed;
 	color: white;
 	height: 650px;
 	padding: 100px 0 0 0;	
 }
 
 #fourth{
-	background: url('bubbles2.png'), url('bubbles2.png'), url('bubbles2.png'), url('fourthBG.png');
+	background: url('bubbles2.png'), url('bubbles2.png'), url('bubbles2.png'), url('fourthBG.jpg');
 	background-position: 50% 0, 50% 0, 50% 0, 50% 0;
 	background-color: #036;
 	background-attachment: fixed;
