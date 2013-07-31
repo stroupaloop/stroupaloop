@@ -17,6 +17,7 @@ http://www.gnu.org/licenses/gpl.html
 	var $secondBG = $('#second');
 	var $thirdBG = $('#third');
 	var $fourthBG = $('#fourth');
+	var $fifthBG = $('#fifth');
 	var $trainers = $("#second .bg");
 
 	var windowHeight = $window.height();
@@ -57,7 +58,7 @@ http://www.gnu.org/licenses/gpl.html
 		var pos = $window.scrollTop(); //scrollbar position
 
 		if($firstBG.hasClass("inview")){
-			$firstBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 900, 0.4)});
+			$firstBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 840, 0.4)});
 		}
 		//if the second section is in view...
 		if($secondBG.hasClass("inview")){
@@ -70,14 +71,27 @@ http://www.gnu.org/licenses/gpl.html
 		//if the third section is in view...
 		if($thirdBG.hasClass("inview")){
 			//call the newPos function and change the background position
-			$thirdBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 2850, 0.3)});
+			$thirdBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 2300, 0.3)});
+		}
+
+		//if the fourth section is in view...
+		if($fourthBG.hasClass("inview")){
+			//call the newPos function and change the background position
+			$fourthBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 2800, 0.3)});
+		}
+
+		//if the fifth section is in view...
+		if($fifthBG.hasClass("inview")){
+			//call the newPos function and change the background position
+			$fifthBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 2800, 0.3)});
 		}
 		
 		//if the fourth section is in view...
-		if($fourthBG.hasClass("inview")){
-			//call the newPos function and change the background position for CSS3 multiple backgrounds
-			$fourthBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 200, 0.9) + ", " + newPos(50, windowHeight, pos, 0, 0.7) + ", " + newPos(50, windowHeight, pos, 0, 0.5) + ", " + newPos(50, windowHeight, pos, 700, 0.3)});
-		}
+
+		// if($fourthBG.hasClass("inview")){
+		// 	//call the newPos function and change the background position for CSS3 multiple backgrounds
+		// 	$fourthBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 200, 0.9) + ", " + newPos(50, windowHeight, pos, 0, 0.7) + ", " + newPos(50, windowHeight, pos, 0, 0.5) + ", " + newPos(50, windowHeight, pos, 700, 0.3)});
+		// }
 		
 		$('#pixels').html(pos); //display the number of pixels scrolled at the bottom of the page
 	}

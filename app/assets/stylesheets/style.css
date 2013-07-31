@@ -52,7 +52,7 @@ h2{
 }
 
 #header{
-	margin-bottom:10px;
+	
 }
 #header h1{
 	margin-top:10px;
@@ -62,7 +62,7 @@ h2{
 }
 #header h2{
 	margin-top:0px;
-	padding-left:50px;
+	padding-left:70px;
 }
 
 .float-left{
@@ -98,6 +98,7 @@ h2{
 #header{
 	background: white;
 	height: 100px;	
+	margin-bottom:10px;
 }
 
 #intro{
@@ -109,9 +110,9 @@ h2{
 }
 
 #second{
-	background: url('secondBG.jpg') 50% 0 no-repeat fixed;
+	background: #EB6C52;
 	color: white;
-	height: 1300px;
+	height: 800px;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
@@ -129,24 +130,35 @@ h2{
 }
 
 #third{
-	background: url('kal-shot.jpg') 50% 0 no-repeat fixed;
+	background: url('welding.jpg') 50% 0 no-repeat fixed;
 	color: white;
-	height: 650px;
+	height: 800px;
 	padding: 100px 0 0 0;	
 }
 
 #fourth{
-	background: url('bubbles2.png'), url('bubbles2.png'), url('bubbles2.png'), url('fourthBG.jpg');
-	background-position: 50% 0, 50% 0, 50% 0, 50% 0;
-	background-color: #036;
+	/*background: url('bubbles2.png'), url('bubbles2.png'), url('bubbles2.png'), url('fourthBG.jpg');
+	background-position: 50% 0, 50% 0, 50% 0, 50% 0;*/
+	/*background-color: #036;
 	background-attachment: fixed;
-	background-repeat: repeat, repeat, repeat ,no-repeat;
+	background-repeat: repeat, repeat, repeat ,no-repeat;*/
+	background: #377A93;
 	color: white;
 	height: 1300px;
-	padding: 100px 0 0 0;
+	margin: 0 auto;
+	overflow:hidden;
+	padding:0;
+	/*padding: 100px 0 0 0;*/
 }
 
 #fifth{
+	background: url('kal-shot.jpg') 50% 0 no-repeat fixed;
+	color: white;
+	height: 800px;
+	padding: 100px 0 0 0;	
+}
+
+#sixth{
 	background: #ccc;
 	height: 1000px;
 	margin: 0 auto;
