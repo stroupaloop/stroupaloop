@@ -19,11 +19,12 @@ http://www.gnu.org/licenses/gpl.html
 	var $fourthBG = $('#fourth');
 	var $fifthBG = $('#fifth');
 	var $trainers = $("#second .bg");
+	var $asseenonTV = $("#fifth .bg");
 
 	var windowHeight = $window.height();
 
 	// apply the inview class
-	$('#intro, #second, #third, #fourth').bind('inview', function(event, visible){
+	$('#intro, #second, #third, #fourth, #fifth').bind('inview', function(event, visible){
 		if (visible == true) {
 			$(this).addClass("inview");
 		} else {
@@ -32,14 +33,14 @@ http://www.gnu.org/licenses/gpl.html
 	});
 
 	//places nav in the center of window
-	function RepositionNav(){
-		var windowHeight = $window.height(); //get window height
-		var navHeight = $('#nav').height()/2;
-		var windowCenter = (windowHeight / 2);
-		var newtop = windowCenter - navHeight;
-		$('#nav').css({"top": newtop}); //set the navbar position
-	}
-	RepositionNav(); //calls the function
+	// function RepositionNav(){
+	// 	var windowHeight = $window.height(); //get window height
+	// 	var navHeight = $('#nav').height()/2;
+	// 	var windowCenter = (windowHeight / 2);
+	// 	var newtop = windowCenter - navHeight;
+	// 	$('#nav').css({"top": newtop}); //set the navbar position
+	// }
+	// RepositionNav(); //calls the function
 
 	//function that is called for every pixel the user scrolls. Determines the position of the background
 	/*arguments: 
@@ -83,7 +84,8 @@ http://www.gnu.org/licenses/gpl.html
 		//if the fifth section is in view...
 		if($fifthBG.hasClass("inview")){
 			//call the newPos function and change the background position
-			$fifthBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 2800, 0.3)});
+			$fifthBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 3800, 0.3)});
+			$asseenonTV.css({'backgroundPosition': newPos(50, windowHeight, pos, 4450, 0.6)});
 		}
 		
 		//if the fourth section is in view...
@@ -100,7 +102,7 @@ http://www.gnu.org/licenses/gpl.html
 	//deals with users resizing the window
 	$window.resize(function () {
 		Move(); 
-		RepositionNav();
+		// RepositionNav();
 	});
 
 	//when the user is scrolling

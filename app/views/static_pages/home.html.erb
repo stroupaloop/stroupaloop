@@ -14,7 +14,14 @@
     		<br/>
     		<br/>
     		<div class="col-lg-4 col-offset-8 float-right center">
-	        	<p><strong>Learn more</strong><br/><i class="icon-chevron-down icon-large"></i></p>
+	        	<h2><strong>Learn more</strong><br/>
+	        		<span class="icon-stack">
+	        			<i class="icon-circle icon-stack-base icon-dark"></i>
+	        			<span class="nav">
+	        				<a href="#second" title="Next Section"><i class="icon-chevron-down first icon-large icon-light"></i></a>
+	        			</span>
+	        		</span>
+        		</h2>
 	        </div>
 	    </div>
     </div> <!--.story-->
@@ -22,100 +29,177 @@
 <div id="second">
 	<div class="container">
 		<div class="row">
-			<br/>
-			<br/>
-			<br/>
 			<div class="col-lg-4 center">
-				<i class="icon-laptop icon-4x icon-border"></i>
+				<h2><i class="icon-laptop icon-4x icon-border"></i></h2>
 				<br/>
 				<br/>
-				<p>en&middot;gi&middot;nerd<br/>[en-j<em>uh</em>-<strong>nurd</strong>]</p>
-				<h3>an engineer who's<br/>self aware of his nerdiness<br/> and affinity to computers.</h3>
+				<h2>en&middot;gi&middot;nerd<br/>[en-j<em>uh</em>-<strong>nurd</strong>]</h2>
+				<h3>an engineer who is<br/>self aware of his nerdiness<br/> and affinity to computers.</h3>
 			</div>
 			<div class="col-lg-4 center">
-				<i class="icon-wrench icon-4x icon-border"></i>
+				<h2><i class="icon-wrench icon-4x icon-border"></i></h2>
 				<br/>
 				<br/>
-				<p>mak&middot;er<br/>[<strong>mey</strong>-ker]</p>
+				<h2>mak&middot;er<br/>[<strong>mey</strong>-ker]</h2>
 				<h3>a person who loves to<br/>create things in their<br/>spare time.</h3>
 			</div>
 			<div class="col-lg-4 center">
-				<i class="icon-rocket icon-4x icon-border"></i>
+				<h2><i class="icon-rocket icon-4x icon-border"></i></h2>
 				<br/>
 				<br/>
-				<p>in&middot;no&middot;vat&middot;or<br/>[<strong>in</strong>-<em>uh</em>-veyt-or]</p>
+				<h2>in&middot;no&middot;vat&middot;or<br/>[<strong>in</strong>-<em>uh</em>-veyt-or]</h2>
 				<h3>to introduce something new;<br/>make changes in anything<br/>already established.</h3>
 			</div>
 		</div>
+		<div class="row pull-right" id="second-last">
+    		<span class="icon-stack sub">
+    			<i class="icon-circle sub icon-stack-base icon-dark"></i>
+    			<span class="nav">
+    				<a href="#third" title="Next Section"><i class="icon-chevron-down sub icon-large icon-light"></i></a>
+    			</span>
+    		</span>
+        </div>
 	</div>
 </div> <!--#third-->
 <div id="third">
     <div class="container">
     	<div class="row">
     		<div class="col-lg-5 center">
-    			<p><em>solving complex<br/>problems with<br/>multidiscplinary<br/>solutions.</em></p>
+    			<h2><em>solving complex<br/>problems with<br/>multidisciplinary<br/>solutions.</em></h2>
     		</div>
 		</div>
+		<div class="row pull-right" id='third-last'>
+    		<span class="icon-stack sub">
+    			<i class="icon-circle sub icon-stack-base icon-light"></i>
+    			<span class="nav">
+    				<a href="#fourth" title="Next Section"><i class="icon-chevron-down sub icon-large icon-dark"></i></a>
+    			</span>
+    		</span>
+        </div>
 	</div>
 </div> <!--#second-->
 <div id="fourth">
     <div class="container">
     	<div class="row">
-    		<br/>
-    		<br/>
-    		<br/>
-    		<br/>
-    		<br/>
 		  <div class="col-lg-3">
-		    <div class="thumbnail">
-		      <%= image_tag src="dfi.gif"%>
+		    <div class="thumbnail projects">
+		      <%= image_tag src="dfi.gif", :id => "dfi"%>
 		      <div class="caption">
 		        <h3>DFI</h3>
-		        <p>...</p>
+		        <p>Led a project team on an international fluid power consulting project.</p>
 		      </div>
 		    </div>
 		  </div>
 		  <div class="col-lg-3">
-		    <div class="thumbnail">
-		      <%= image_tag src="california-screamin.gif"%>
+		    <div class="thumbnail projects">
+		      <%= image_tag src="california-screamin.gif", :id => "cali"%>
 		      <div class="caption">
 		        <h3>California Screamin'</h3>
-		        <p>...</p>
+		        <p>Fluid power consulting project for Disneyland Resorts.</p>
 		      </div>
 		    </div>
 		  </div>
 		  <div class="col-lg-3">
-		    <div class="thumbnail">
-		      <%= image_tag src="EFV.gif"%>
+		    <div class="thumbnail projects">
+		      <%= image_tag src="EFV.gif", :id => "efv"%>
 		      <div class="caption">
-		        <h3>Marine Corps EFV</h3>
-		        <p>...</p>
+		        <h3>USMC EFV</h3>
+		        <p>Managed two concurrent project teams for the Expeditionary Fighting Vehicle.</p>
 		      </div>
 		    </div>
 		  </div>
 		  <div class="col-lg-3">
-		    <div class="thumbnail">
-		      <%= image_tag src="dbf-flight.gif"%>
+		    <div class="thumbnail projects">
+		      <%= image_tag src="dbf-flight.gif", :id=>"dbf"%>
 		      <div class="caption">
 		        <h3>Design, Build, Fly</h3>
-		        <p>...</p>
+		        <p>Chief engineer on a competitive UAV design challenge.</p>
 		      </div>
 		    </div>
 		  </div>
 		</div>
+		<br/>
+		<br/>
+	    <div class="row">
+	        <div class="col-lg-12">
+	            <div id="sequence">
+	                <ul class="sequence-canvas">
+	                    <li class="animate-in">
+	                        <div class="info1">
+	                            <p>Frame 1 information</p>
+	                        </div>
+	                    </li>
+	                    <li>
+	                        <div class="info2">
+	                            <p>Frame 2 information</p>
+	                        </div>
+	                    </li>
+	                    <li>
+	                        <div class="info3">
+	                            <p>Frame 3 information</p>
+	                        </div>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+
+		<!-- <div class="row hide" id="dfi-text">
+			<div class="col-lg-12">
+				<blockquote>
+					<p>Secured a $100,000, one year international fluid power (hydraulic) consulting project for a Canadian based oil rigging company that involved</p>
+					<ul>
+						<li>on-site analysis and review of serveral fluid power systems, designs, components, and issues</li>
+						<li>dynamic modeling and simulation of systems and subsystems</li>
+						<li>presentation of test results and recommendations</li>
+						<li>implementation of solutions and follow-on validation</li>
+					</ul>
+				</blockquote>
+			</div>
+		</div>
+		<div class="row hide" id="cali-text">
+			<div class="col-lg-12">
+				<blockquote>
+					<p>Fluid power (pneumatic) consulting project for Disneyland Resorts that required</p>
+					<ul>
+						<li>collaboration with the Disneyland Resorts engineering team on design and test plans, spanning dynamic modeling and simulation, test components, and reports</li>
+						<li>on-site component, sub-system, and system testing</li>
+						<li>presentation of findings and recommendations to the Disneyland Resorts engineering team</li>
+					</ul>
+				</blockquote>
+			</div>
+		</div>
+		<div class="row hide" id="efv-text">
+			<div class="col-lg-12">
+				<blockquote>
+					<p>Managed two concurrent project teams for the United States Marine Corps Expeditionary Fighting Vehicle program (General Dynamics Amphibious Systems) involving</p>
+					<ul>
+						<li>on-site inspectiong and DFMEA testing</li>
+						<li>dynamic modeling and simulation of fluid power (hydraulic and pneumatic) components, sub-systems, and systems</li>
+						<li>designing, fabricating, and validating multiple test platforms and tests to characterize components, sub-systems, and systems</li>
+						<li>presentation of findings and recommendations for implementation into system design</li>
+					</ul>
+				</blockquote>
+			</div>
+		</div>
+		<div class="row hide" id="dbf-text">
+			<div class="col-lg-12">
+				<blockquote>
+					<p>1st place out of 54 international teams, Oklahoma State University chief engineer for the American Institute of Aeronatuics and Astronautics Design, Build, Fly competition. A cooperative team effort requiring</p>
+					<ul>
+						<li>conceptual platform design to meet specified mission crtiera</li>
+						<li>development of manufacturing techniques for rapid prototyping and testing</li>
+						<li>execution of performance-rated flights against domestic international teams</li>
+					</ul>
+				</blockquote>
+			</div>
+		</div> -->
     </div> <!--.story-->
 </div> <!--#second-->
 <div id="fifth">
-    <div class="story">
-        <div class="bg"></div>
-            Article content here
-    </div> <!--.story-->
+	<div class="bg"></div>
 </div> <!--#second-->
 <div id="sixth">
-	<div class="story">
-		<div class="bg"></div>
-			Article content here
-	</div>
 </div>
 
 <!-- <div class="container">

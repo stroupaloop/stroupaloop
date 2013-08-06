@@ -75,13 +75,7 @@ h2{
 	margin: 0 20px 0 0;
 }
 
-.center{
-	font-size: 2.5em;
-	padding: 80px 0;
-	text-align: center;
-}
-
-#nav{
+/*#nav{
 	list-style: none;
 	position: fixed;
 	right: 20px;
@@ -89,7 +83,7 @@ h2{
 
 #nav li{
 	margin: 0 0 15px 0;	
-}
+}*/
 
 #header, #intro, #second{
 	width: 100%;
@@ -116,6 +110,7 @@ h2{
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
+	padding-top:100px;
 }
 
 
@@ -133,7 +128,7 @@ h2{
 	background: url('welding.jpg') 50% 0 no-repeat fixed;
 	color: white;
 	height: 800px;
-	padding: 100px 0 0 0;	
+	padding: 200px 0 0 0;	
 }
 
 #fourth{
@@ -144,10 +139,11 @@ h2{
 	background-repeat: repeat, repeat, repeat ,no-repeat;*/
 	background: #377A93;
 	color: white;
-	height: 1300px;
+	height: 800px;
 	margin: 0 auto;
 	overflow:hidden;
 	padding:0;
+	padding-top:125px;
 	/*padding: 100px 0 0 0;*/
 }
 
@@ -155,11 +151,23 @@ h2{
 	background: url('kal-shot.jpg') 50% 0 no-repeat fixed;
 	color: white;
 	height: 800px;
-	padding: 100px 0 0 0;	
+	margin:0 auto;
+	overflow:hidden;
+	padding:0;	
+}
+
+#fifth .bg{
+	background: url('as-seen-on-tv.png') 50% 0 no-repeat fixed;
+	height:800px;
+	margin: 0 auto;
+	padding:0;
+	position:absolute;
+	width:900px;
+	z-index:200;
 }
 
 #sixth{
-	background: #ccc;
+	background: #99311B;
 	height: 1000px;
 	margin: 0 auto;
 	padding: 40px 0 0 0;

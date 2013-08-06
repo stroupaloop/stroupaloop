@@ -1,6 +1,9 @@
 Stroupaloop::Application.routes.draw do
   root to: 'static_pages#home'
 
+  match '/sequence', to: 'static_pages#sequence'
+  match '/modern', to: 'static_pages#modern'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
