@@ -66,26 +66,26 @@ http://www.gnu.org/licenses/gpl.html
 			//call the newPos function and change the background position
 			$secondBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 1250, 0.3)});
 			//call the newPos function and change the secnond background position
-			$trainers.css({'backgroundPosition': newPos(50, windowHeight, pos, 1900, 0.6)});
+			//$trainers.css({'backgroundPosition': newPos(50, windowHeight, pos, 1900, 0.6)});
 		}
 		
 		//if the third section is in view...
 		if($thirdBG.hasClass("inview")){
 			//call the newPos function and change the background position
-			$thirdBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 2300, 0.3)});
+			$thirdBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 2600, 0.3)});
 		}
 
 		//if the fourth section is in view...
 		if($fourthBG.hasClass("inview")){
 			//call the newPos function and change the background position
-			$fourthBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 2800, 0.3)});
+			$fourthBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 3200, 0.3)});
 		}
 
 		//if the fifth section is in view...
 		if($fifthBG.hasClass("inview")){
 			//call the newPos function and change the background position
-			$fifthBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 3800, 0.3)});
-			$asseenonTV.css({'backgroundPosition': newPos(50, windowHeight, pos, 4450, 0.6)});
+			$fifthBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 4600, 0.3)});
+			$asseenonTV.css({'backgroundPosition': newPos(50, windowHeight, pos, 5150, 0.6)});
 		}
 		
 		//if the fourth section is in view...

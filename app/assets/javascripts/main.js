@@ -20,14 +20,23 @@ $(document).ready(function(){
     //     return false;
     // });
 
-    console.debug("why isn't this working?");
+    console.debug("TRAGDOR!!!");
 
     //used for smooth scrolling
     $('.nav').localScroll();
 
     //initiate sequence.js
-    var projects = $("#projects").sequence().data("sequence");
-    var sequence = $("#sequence").sequence().data("sequence");
+
+    var options = {
+        nextButton: true,
+        prevButton: true,
+        animateStartingFrameIn: true,
+        autoPlay: true,
+        autoPlayDelay: 3000,
+        preloader: true
+    };
+
+    var projects = $("#projects").sequence(options).data("sequence");
 
     // jQuery slide right/left
     jQuery.fn.extend({
