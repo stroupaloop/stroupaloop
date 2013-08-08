@@ -18,13 +18,23 @@ http://www.gnu.org/licenses/gpl.html
 	var $thirdBG = $('#third');
 	var $fourthBG = $('#fourth');
 	var $fifthBG = $('#fifth');
-	var $trainers = $("#second .bg");
-	var $asseenonTV = $("#fifth .bg");
+	var $sixthBG = $('#sixth');
+
+	var $seventhBG = $('#seventh');
+	var $ckmascot = $("#seventh .bg");
+
+	var $eigthBG = $('#eighth');
+	var $ninthBG = $('#ninth');
+	var $asseenonTV = $("#ninth .bg");
+	var $tbbt = $("#ninth .bg .bg-tbbt")
+
+	var $tenthBG = $('#tenth');
+
 
 	var windowHeight = $window.height();
 
 	// apply the inview class
-	$('#intro, #second, #third, #fourth, #fifth').bind('inview', function(event, visible){
+	$('#intro, #second, #third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth, #tenth, #eleventh,').bind('inview', function(event, visible){
 		if (visible == true) {
 			$(this).addClass("inview");
 		} else {
@@ -61,13 +71,13 @@ http://www.gnu.org/licenses/gpl.html
 		if($firstBG.hasClass("inview")){
 			$firstBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 840, 0.4)});
 		}
-		//if the second section is in view...
-		if($secondBG.hasClass("inview")){
-			//call the newPos function and change the background position
-			$secondBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 1250, 0.3)});
-			//call the newPos function and change the secnond background position
-			//$trainers.css({'backgroundPosition': newPos(50, windowHeight, pos, 1900, 0.6)});
-		}
+		// //if the second section is in view...
+		// if($secondBG.hasClass("inview")){
+		// 	//call the newPos function and change the background position
+		// 	$secondBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 1250, 0.3)});
+		// 	//call the newPos function and change the secnond background position
+		// 	//$trainers.css({'backgroundPosition': newPos(50, windowHeight, pos, 1900, 0.6)});
+		// }
 		
 		//if the third section is in view...
 		if($thirdBG.hasClass("inview")){
@@ -75,25 +85,55 @@ http://www.gnu.org/licenses/gpl.html
 			$thirdBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 2600, 0.3)});
 		}
 
-		//if the fourth section is in view...
-		if($fourthBG.hasClass("inview")){
-			//call the newPos function and change the background position
-			$fourthBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 3200, 0.3)});
-		}
+		// //if the fourth section is in view...
+		// if($fourthBG.hasClass("inview")){
+		// 	//call the newPos function and change the background position
+		// 	$fourthBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 3200, 0.3)});
+		// }
 
 		//if the fifth section is in view...
 		if($fifthBG.hasClass("inview")){
 			//call the newPos function and change the background position
 			$fifthBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 4600, 0.3)});
-			$asseenonTV.css({'backgroundPosition': newPos(50, windowHeight, pos, 5150, 0.6)});
+			//$asseenonTV.css({'backgroundPosition': newPos(50, windowHeight, pos, 5150, 0.6)});
+		}
+
+		// //if the sixth section is in view...
+		// if($sixthBG.hasClass("inview")){
+		// 	//call the newPos function and change the background position
+		// 	$sixthBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 5200, 0.3)});
+		// }
+
+		//if the seventh section is in view...
+		// if($seventhBG.hasClass("inview")){
+		// 	//call the newPos function and change the background position
+		// 	// $seventhBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 7200, 0.3)});
+		// 	// $ckshield.css({'backgroundPosition': newPos(0, windowHeight, pos, 7200, 0.6)});
+		// 	// $ckmascot.css({'backgroundPosition': newPos(50, windowHeight, pos, 7200, 0.6)});
+		// 	$seventhBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 7200, 0.3) + ", " + newPos(50, windowHeight, pos, 7200, 0.7) + ", " + newPos(50, windowHeight, pos, 7200, 0.5);
+		// }
+		// CommonKey section
+
+		if($seventhBG.hasClass("inview")){
+			// call the newPos function and change the background position
+			$seventhBG.css({'backgroundPosition': newPos(10, windowHeight, pos, 6975, 0.3)});
+			$ckmascot.css({'backgroundPosition': newPos(95, windowHeight, pos, 6750, 0.6)});
+		
 		}
 		
-		//if the fourth section is in view...
-
-		// if($fourthBG.hasClass("inview")){
+		// if the eigth section is in view...
+		// if($eigthBG.hasClass("inview")){
 		// 	//call the newPos function and change the background position for CSS3 multiple backgrounds
-		// 	$fourthBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 200, 0.9) + ", " + newPos(50, windowHeight, pos, 0, 0.7) + ", " + newPos(50, windowHeight, pos, 0, 0.5) + ", " + newPos(50, windowHeight, pos, 700, 0.3)});
+		// 	$eigthBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 200, 0.9) + ", " + newPos(50, windowHeight, pos, 0, 0.7) + ", " + newPos(50, windowHeight, pos, 0, 0.5) + ", " + newPos(50, windowHeight, pos, 700, 0.3)});
 		// }
+
+		//if the ninth section is in view...
+		if($ninthBG.hasClass("inview")){
+			//call the newPos function and change the background position
+			$ninthBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 7975, 0.3)});
+			$asseenonTV.css({'backgroundPosition': newPos(50, windowHeight, pos, 8525, 0.6)});
+			$tbbt.css({'backgroundPosition': newPos(97, windowHeight, pos, 8175, 0.4)});
+		}
 		
 		$('#pixels').html(pos); //display the number of pixels scrolled at the bottom of the page
 	}

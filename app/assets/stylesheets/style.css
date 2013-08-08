@@ -125,7 +125,7 @@ h2{
 }*/
 
 #third{
-	background: url('welding.jpg') 50% 0 no-repeat fixed;
+	background: url('headshot-mill-2.jpg') 50% 0 no-repeat fixed;
 	color: white;
 	height: 1000px;
 	padding: 200px 0 0 0;	
@@ -143,35 +143,93 @@ h2{
 	margin: 0 auto;
 	overflow:hidden;
 	padding:0;
-	padding-top:50px;
+	padding-top:30px;
 	/*padding: 100px 0 0 0;*/
 }
 
 #fifth{
-	background: url('kal-shot.jpg') 50% 0 no-repeat fixed;
+	background: url('welding.jpg') 50% 0 no-repeat fixed;
 	color: white;
 	height: 1000px;
 	margin:0 auto;
 	overflow:hidden;
-	padding:0;	
-}
-
-#fifth .bg{
-	background: url('as-seen-on-tv.png') 50% 0 no-repeat fixed;
-	height:800px;
-	margin: 0 auto;
 	padding:0;
-	position:absolute;
-	width:900px;
-	z-index:200;
+	padding-top:100px;	
 }
 
 #sixth{
 	background: #99311B;
 	height: 1000px;
 	margin: 0 auto;
-	padding: 40px 0 0 0;
+	padding: 30px 0 0 0;
 }
+
+/* CommonKey */
+#seventh{
+	background: url('commonkey-logo.png') 10% 0 no-repeat fixed;
+	color: white;
+	height: 600px;
+	margin:0 auto;
+	overflow:hidden;
+	padding:0;
+}
+#seventh > .bg{
+	background: url('commonkey-mascot.png') 95% 0 no-repeat fixed;
+	color: white;
+	height: 1000px;
+	margin:0 auto;
+	overflow:hidden;
+	padding:0;
+}
+
+/* CommonKey story */
+#eighth{
+	background: #ECE1D4;
+	height: 775px;
+	margin: 0 auto;
+	padding: 30px 0 0 0;
+}
+#anchor{
+	display:block;
+	position:relative;
+	top:-225px;
+	visibility:hidden;
+}
+
+/* TBBT */
+#ninth{
+	background: url('kal-shot.jpg') 50% 0 no-repeat fixed;
+	color: white;
+	height: 800px;
+	margin:0 auto;
+	overflow:hidden;
+	padding:0;
+	padding-top:0px;	
+
+}
+#ninth .bg{
+	background: url('as-seen-on-tv.png') 50% 0 no-repeat fixed;
+	height:1000px;
+	margin: 0 auto;
+	padding:0;
+	z-index:200;
+}
+#ninth .bg-tbbt{
+	background: url('tbbt-150-2.png') 5% 0 no-repeat fixed;
+	height:1000px;
+	margin: 0 auto;
+	padding:0;
+	z-index:200;
+}
+
+
+#tenth{
+	background: #424242;
+	height: 850px;
+	margin: 0 auto;
+	padding: 30px 0 0 0;
+}
+
 
 .story{
 	margin: 0 auto;
