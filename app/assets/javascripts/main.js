@@ -23,18 +23,40 @@ $(document).ready(function(){
     console.debug("TRAGDOR!!!");
 
     // Google API Maps
-    var map;
-    function initialize() {
-      var mapOptions = {
-        zoom: 8,
-        center: new google.maps.LatLng(-34.397, 150.644),
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      map = new google.maps.Map(document.getElementById('map-canvas'),
-          mapOptions);
-    }
+    var stockholm = new google.maps.LatLng(39.288608,-76.599215);
+var parliament = new google.maps.LatLng(39.288608,-76.599215);
+var marker;
+var map;
 
-    google.maps.event.addDomListener(window, 'load', initialize);
+function initialize() {
+  var mapOptions = {
+    zoom: 13,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    center: stockholm
+  };
+
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+          mapOptions);
+
+  marker = new google.maps.Marker({
+    map:map,
+    draggable:true,
+    animation: google.maps.Animation.DROP,
+    position: parliament
+  });
+  google.maps.event.addListener(marker, 'click', toggleBounce);
+}
+
+function toggleBounce() {
+
+  if (marker.getAnimation() != null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
 
     //used for smooth scrolling
     $('.nav').localScroll();
