@@ -89,7 +89,7 @@ http://www.gnu.org/licenses/gpl.html
 
 /* CommonKey */
 #seventh{
-	background: url('commonkey-logo.png') 10% 0 no-repeat fixed;
+	background: url('commonkey-logo-2.png') 10% 0 no-repeat fixed;
 	color: white;
 	height: 600px;
 	margin:0 auto;
@@ -97,7 +97,7 @@ http://www.gnu.org/licenses/gpl.html
 	padding:0;
 }
 #seventh > .bg{
-	background: url('commonkey-mascot.png') 95% 0 no-repeat fixed;
+	background: url('commonkey-mascot-2.png') 95% 0 no-repeat fixed;
 	color: white;
 	height: 1000px;
 	margin:0 auto;
