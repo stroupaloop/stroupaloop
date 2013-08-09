@@ -1,62 +1,42 @@
 $(document).ready(function(){
 
-    // tbbt video
-    // $('#tbbtVideo').on('hide', function () {
-    // console.debug("video hidden",this);
-    // var iframev = $(this).find(".modal-body iframe");
-    // var src = iframev.attr("src");
-    // iframev.attr("src","");
-    // iframev.attr("src",src);
-    // });
-
-    // console.debug("hi");
-    // $(".my-accord").hide();
-    // $(".toggle-my-accord").click(function(){
-    //     if($("#"+this.href.split("#")[1]+":visible").size()){   
-    //         $("#"+this.href.split("#")[1]).slideUp();
-    //     }else{
-    //         $("#"+this.href.split("#")[1]).slideDown().siblings(".my-accord").slideUp();
-    //     }
-    //     return false;
-    // });
-
     console.debug("TRAGDOR!!!");
 
     // Google API Maps
     var stockholm = new google.maps.LatLng(39.288608,-76.599215);
-var parliament = new google.maps.LatLng(39.288608,-76.599215);
-var marker;
-var map;
+    var parliament = new google.maps.LatLng(39.288608,-76.599215);
+    var marker;
+    var map;
 
-function initialize() {
-  var mapOptions = {
-    zoom: 13,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    center: stockholm
-  };
+    function initialize() {
+      var mapOptions = {
+        zoom: 13,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        center: stockholm
+      };
 
-  map = new google.maps.Map(document.getElementById('map-canvas'),
-          mapOptions);
+      map = new google.maps.Map(document.getElementById('map-canvas'),
+              mapOptions);
 
-  marker = new google.maps.Marker({
-    map:map,
-    draggable:true,
-    animation: google.maps.Animation.DROP,
-    position: parliament
-  });
-  google.maps.event.addListener(marker, 'click', toggleBounce);
-}
+      marker = new google.maps.Marker({
+        map:map,
+        draggable:true,
+        animation: google.maps.Animation.DROP,
+        position: parliament
+      });
+      google.maps.event.addListener(marker, 'click', toggleBounce);
+    }
 
-function toggleBounce() {
+    function toggleBounce() {
 
-  if (marker.getAnimation() != null) {
-    marker.setAnimation(null);
-  } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
-  }
-}
+      if (marker.getAnimation() != null) {
+        marker.setAnimation(null);
+      } else {
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+      }
+    }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+    google.maps.event.addDomListener(window, 'load', initialize);
 
     //used for smooth scrolling
     $('.nav').localScroll();
@@ -151,25 +131,5 @@ google.maps.event.addDomListener(window, 'load', initialize);
         });
     });
 
-
-    // suppose to change out the image on hover
-    $('#first-bubble').mouseenter(function(){
-    });
-    $('#first-bubble').mouseleave(function(){
-    });
-
-    // blinking chevron
-    // $('.icon-chevron-down').each(function() {
-    // var elem = $(this);
-    // setInterval(function() {
-    //     if (elem.css('visibility') == 'hidden') {
-    //         elem.css('visibility', 'visible');
-    //     } else {
-    //         elem.css('visibility', 'hidden');
-    //     }    
-    // }, 500);
-    // $('.icon-chevron-down').mouseenter(function(){
-    //     $(this).stop(true,true);
-    // });
 
 });

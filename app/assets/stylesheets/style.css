@@ -13,77 +13,6 @@ http://www.opensource.org/licenses/mit-license.php
 http://www.gnu.org/licenses/gpl.html
 */
 
-@charset "utf-8";
-/* CSS Document */
-
-/* body{
-	margin: 0;
-	min-width: 980px;
-	padding: 0;
-}
-
-p{
-	margin: 0 0 20px 0;	
-}
-
-p, ul{
-	font-family:"Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	font-size-adjust:0.488;
-	font-weight:200;
-	font-style:normal;
-}
-
-img{
-	border: 0;
-}
-
-h1, #pixels{
-	font-family:"Museo 900", Verdana, serif;
-	font-size-adjust:0.40;
-	font-weight:700;
-	font-style:normal;
-}
-
-h2{
-	font-family:"Beau Sans Pro Book", Verdana, sans-serif;
-	font-size-adjust:0.531;
-	font-weight:500;
-	font-style:normal;
-}
-
-#header{
-	
-}
-#header h1{
-	margin-top:10px;
-}
-#header h1, #pixels{
-	color: #48941A;
-}
-#header h2{
-	margin-top:0px;
-	padding-left:70px;
-}
-
-.float-left{
-	float: left;	
-	margin: 0 0 0 20px;
-}
-
-.float-right{
-	float: right;
-	margin: 0 20px 0 0;
-}
-/*#nav{
-	list-style: none;
-	position: fixed;
-	right: 20px;
-}
-
-#nav li{
-	margin: 0 0 15px 0;	
-}*/
-
 #header h1{
 	margin-top:10px;
 }
@@ -123,17 +52,6 @@ h2{
 	padding-top:100px;
 }
 
-
-/*#second .bg{
-	background: url('trainers.png') 50% 0 no-repeat fixed;
-	height: 1000px;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	width: 900px;
-	z-index: 200;
-}*/
-
 #third{
 	background: url('headshot-mill-2.jpg') 50% 0 no-repeat fixed;
 	color: white;
@@ -142,11 +60,6 @@ h2{
 }
 
 #fourth{
-	/*background: url('bubbles2.png'), url('bubbles2.png'), url('bubbles2.png'), url('fourthBG.jpg');
-	background-position: 50% 0, 50% 0, 50% 0, 50% 0;*/
-	/*background-color: #036;
-	background-attachment: fixed;
-	background-repeat: repeat, repeat, repeat ,no-repeat;*/
 	background: #377A93;
 	color: white;
 	height: 1000px;
@@ -154,7 +67,6 @@ h2{
 	overflow:hidden;
 	padding:0;
 	padding-top:30px;
-	/*padding: 100px 0 0 0;*/
 }
 
 #fifth{
