@@ -116,8 +116,8 @@ http://www.gnu.org/licenses/gpl.html
 
 		if($seventhBG.hasClass("inview")){
 			// call the newPos function and change the background position
-			$seventhBG.css({'backgroundPosition': newPos(15, windowHeight, pos, 7175, 0.3)});
-			$ckmascot.css({'backgroundPosition': newPos(90, windowHeight, pos, 7025, 0.6)});
+			$seventhBG.css({'backgroundPosition': newPos(15, windowHeight, pos, 7050, 0.3)});
+			$ckmascot.css({'backgroundPosition': newPos(90, windowHeight, pos, 6950, 0.6)});
 		
 		}
 		
