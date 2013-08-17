@@ -1,19 +1,21 @@
 <div id="header">
 	<div class="container">
+		<!-- have to fix once Bootstrap 3.1 comes out with nested Responsive utilities -->
+		
 		<div class="row">
-			<div class="col-lg-6">
-		      	
+			
+			<div class="col-sm-6 col-md-6 col-lg-6">
 				<p id="connect"><strong>Connect:</strong>
 					<a target="_blank" href="https://twitter.com/stroupaloop" title="Follow @stroupaloop on Twitter" id="social-media"><i class="icon-twitter icon-large"></i></a> <a target="_blank" href="https://www.facebook.com/pages/Andrew-Stroup/125661194293149" title="Lile me on Facebook" id="social-media"><i class="icon-facebook icon-large"></i></a> <a target="_blank" href="http://www.linkedin.com/pub/andrew-stroup/20/236/317" title="Connect with me on LinkedIn" id="social-media"><i class="icon-linkedin icon-large"></i></a> <a target="_blank" href="https://github.com/stroupaloop" title="Star me"><i class="icon-github icon-large" id="social-media"></i></a> <a target="_blank" href="mailto:stroupaloop@gmail.com" title="Email me" id="social-media"><i class="icon-envelope-alt icon-large"></i></a>
 				</p>
 				<p id="built">
-		      		<span class="label label-info" id="built-with">Ruby on Rails</span><span class="label label-info" id="built-with">Twitter Bootstrap 3</span><span class="label label-info" id="built-with">Parallax</span><span class="label label-info" id="built-with">sequence.js</span><span class="label label-info" id="built-with">Google Map API</span>
-		      	</p>
-	      	</div>
-			<div class="cl-lg-6 pull-right">
+      		<span class="label label-info" id="built-with">Ruby on Rails</span><span class="label label-info" id="built-with">Twitter Bootstrap 3</span><span class="visible-xs"><br/></span><span class="label label-info" id="built-with">Responsive</span><span class="label label-info" id="built-with">Parallax</span><span class="label label-info" id="built-with">sequence.js</span>
+      	</p>
+	    </div>	
+	    <div class="col-sm-6 col-md-6 col-lg-6 text-right">
 				<h1>Andrew Stroup{aloop}</h1>
 				<h2>enginerd. maker. innovator.</h2>
-			</div>
+			</div>		
 		</div>
 	</div>
 </div>
@@ -23,7 +25,7 @@
     	<div class="row">
     		<br/>
     		<br/>
-    		<div class="col-lg-4 col-offset-8 float-right center">
+    		<div class="col-sm-12 col-md-12 col-lg-12 text-right">
 	        	<h2><strong>Learn more</strong><br/>
 	        		<span class="icon-stack">
 	        			<i class="icon-circle icon-stack-base icon-dark"></i>
@@ -40,24 +42,18 @@
 <div id="second">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-4 center">
+			<div class="col-xs-4 col-sm-4 col-md-4 center" id="skill">
 				<h2><i class="icon-laptop icon-4x icon-border"></i></h2>
-				<br/>
-				<br/>
 				<h2>en&middot;gi&middot;nerd<br/>[en-j<em>uh</em>-<strong>nurd</strong>]</h2>
 				<h3>an engineer who is<br/>self aware of his nerdiness<br/> and affinity to computers.</h3>
 			</div>
-			<div class="col-lg-4 center">
+			<div class="col-xs-4 col-sm-4 col-md-4 center" id="skill">
 				<h2><i class="icon-wrench icon-4x icon-border"></i></h2>
-				<br/>
-				<br/>
 				<h2>mak&middot;er<br/>[<strong>mey</strong>-ker]</h2>
 				<h3>a person who loves to<br/>create things in their<br/>spare time.</h3>
 			</div>
-			<div class="col-lg-4 center">
+			<div class="col-xs-4 col-sm-4 col-md-4 center" id="skill">
 				<h2><i class="icon-rocket icon-4x icon-border"></i></h2>
-				<br/>
-				<br/>
 				<h2>in&middot;no&middot;vat&middot;or<br/>[<strong>in</strong>-<em>uh</em>-veyt-or]</h2>
 				<h3>to introduce something new;<br/>make changes in anything<br/>already established.</h3>
 			</div>
@@ -237,10 +233,8 @@
 				<h3 id="foundery-subtitle">{casting makers for great things}</h3>
 				<br/>
 				<p>Baltimore Foundery was founded around the principles of community, education, and innovation. Our mission is to provide access to industrial grade tools and education, with the goal of sparking innovation within the Baltimore community. We are a non-profit organization (501(c)(3) filed). We’re located between Fells Point and Harbor East, in the old Kavanaugh building on South Central Ave.<p>
-					<br/>
-					<button type="button" class="btn btn-info pull-right" href="http://bmorefoundery.com" target="_blank">Learn More</button>
+					<a type="button" class="btn btn-info pull-right" href="http://bmorefoundery.com" target="_blank">Learn More</a>
 					<address>
-				  <strong>The Foundery, Inc.</strong><br>
 				  207 South Central Avenue<br>
 				  Baltimore, MD 21230<br>
 				</address>
@@ -278,7 +272,7 @@
 				<h3>Your small business password manager.</h3>
 				<p>CommonKey is a software as a service password manager, tailored for growing companies. In today's world, companies rely heavily on online solutions to help them grow and succeed. All these online solutions have one thing in common, a username and password, the keys to their company. CommonKey is designed to enable companies to securely store login credentials and share access with team members through an intuitive user interface.</p>
 				<br/>
-				<button type="button" class="btn btn-info" href="http://commonkey.com" target="_blank">Learn More</button><button type="button" class="btn btn-success pull-right" href="https://beta.commonkey.com" target="_blank">FREE Beta Sign Up!</button>
+				<a type="button" class="btn btn-info" href="http://commonkey.com" target="_blank">Learn More</a><a type="button" class="btn btn-success pull-right" href="https://beta.commonkey.com" target="_blank">FREE Beta Sign Up!</a>
 				<br/>
 				<br/>
 				<p><strong>ABOUT:</strong> founded late 2012, CommonKey was built to solve a big small business problem and have some fun in the process!<br/><br/>Me? Co-Founder and Chief Everything Officer.</p>
