@@ -1,0 +1,446 @@
+/* IMPLEMENTATION OF SEQUENCE.JS */
+
+/* mixins */
+.transition-duration (@duration) {
+	-webkit-transition-duration: @duration;
+    -moz-transition-duration: @duration;
+    -o-transition-duration: @duration;
+    -ms-transition-duration: @duration;
+    transition-duration: @duration;
+}
+
+#projects{
+	margin-top:-23px;
+	border-style:solid;
+	border-width:5px;
+	border-color:#dfe5e8;
+	background: #dfe5e8;
+	height:400px;
+	position: relative; /* required */
+}
+
+#projects > ol, ul {
+	list-style:none;
+}
+#projects > .sequence-canvas { /* required */
+	height:100%;
+	width:100%;
+}
+#projects > .sequence-canvas > li { /* required */
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	/* : -50%;  optional */
+}
+#projects > .sequence-canvas li > * {
+	position: absolute; /* required */
+	/* only cause the left and opacity properties to transition */
+	/* removed */
+}
+/* navigation */
+.sequence-next,
+.sequence-prev {
+  color: white;
+  cursor: pointer;
+  display: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  position: absolute;
+  position-y:150px;
+  top: 50%;
+  z-index: 1000000;
+  height: 75px;
+  margin-top: -47.5px;
+}
+.sequence-prev {
+  left: 3%;
+}
+.sequence-next {
+  right: 3%;
+}
+.sequence-next, .sequence-prev {
+	position:absolute;
+	opacity: 0.6;
+	.transition-duration(1s);
+}
+.sequence-next:hover, .sequence-prev:hover{
+	opacity:1;
+	.transition-duration(1s);
+}
+
+/* pagination setup */
+.project-pagination{
+	bottom:1%;
+	position:absolute;
+	z-index:10;
+	.transition-duration(1s);
+}
+.project-pagination li {
+	display: inline-block;
+	*display: inline; /* IE7 hack */
+	height:140px;
+}
+.project-pagination li img{
+	cursor: pointer;
+	opacity: 0.5;
+	.transition-duration(0.5s);
+	/* only cause margin-bottom and opacity to transition */
+	-webkit-transition-property: margin-bottom, opacity;
+	-moz-transition-property: margin-bottom, opacity;
+	-ms-transition-property: margin-bottom, opacity;
+	-o-transition-property: margin-bottom, opacity;
+	transition-property: margin-bottom, opacity;
+}
+.project-pagination li img:hover{
+	margin-bottom:5px;
+	.transition-duration(0.3s);
+}
+/* doesn't seem to be working yet */
+.sequence-pagination li.current img {
+	opacity: 1;
+}
+
+/* DFI tansition */
+.dfi-oil-rig {
+	max-height:300px;
+	max-width:600px;
+	left:5%;
+	top: 0%;
+	width:35%;
+	opacity: 0;
+	z-index:50;
+	-webkit-transition-property: top, opacity;
+	-moz-transition-property: top, opacity;
+	-ms-transition-property: top, opacity;
+	-o-transition-property: top, opacity;
+	transition-property: top, opacity;
+}
+.animate-in .dfi-oil-rig{
+	top:10%;
+	opacity:1;
+	.transition-duration(1s);
+}
+.animate-out .dfi-oil-rig {
+	top:15%;
+	opacity:0;
+	.transition-duration(0.5s);
+}
+.dfi-prime-text{
+	color:black;
+	left:55%;
+	width:35%;
+	top:20%;
+	opacity:0;
+	z-index:50;
+	-webkit-transition-property: left, opacity;
+	-moz-transition-property: left, opacity;
+	-ms-transition-property: left, opacity;
+	-o-transition-property: left, opacity;
+	transition-property: left, opacity;
+}
+.animate-in .dfi-prime-text{
+	left: 46%;
+	opacity:1;
+	.transition-duration(1s);
+}
+.animate-out .dfi-prime-text{
+	left: 20%;
+	opacity:0;
+	.transition-duration(0.5s);
+}
+.dfi-sub-text{
+	color:black;
+	left:60%;
+	width:35%;
+	top:45%;
+	opacity:0;
+	z-index:50;
+	-webkit-transition-property: left, opacity;
+	-moz-transition-property: left, opacity;
+	-ms-transition-property: left, opacity;
+	-o-transition-property: left, opacity;
+	transition-property: left, opacity;
+}
+.animate-in .dfi-sub-text{
+	left: 45%;
+	opacity:1;
+	.transition-duration(1s);
+}
+.animate-out .dfi-sub-text{
+	left:25%;
+	opacity:0;
+	.transition-duration(0.5s);
+}
+
+/* California Screamin' transition */
+.disney-logo {
+	max-height:300px;
+	max-width:600px;
+	left:40%;
+	top: 20%;
+	width:35%;
+	opacity: 0;
+	z-index:50;
+	-webkit-transition-property: left, opacity;
+	-moz-transition-property: left, opacity;
+	-ms-transition-property: left, opacity;
+	-o-transition-property: left, opacity;
+	transition-property: left, opacity;
+}
+.animate-in .disney-logo{
+	left:50%;
+	opacity:1;
+	.transition-duration(1s);
+}
+.animate-out .disney-logo {
+	left:55%;
+	opacity:0;
+	.transition-duration(0.5s);
+}
+.disney-prime-text{
+	color:black;
+	left:5%;
+	width:35%;
+	top:20%;
+	opacity:0;
+	z-index:50;
+	-webkit-transition-property: left, opacity;
+	-moz-transition-property: left, opacity;
+	-ms-transition-property: left, opacity;
+	-o-transition-property: left, opacity;
+	transition-property: left, opacity;
+}
+.animate-in .disney-prime-text{
+	left: 10%;
+	opacity:1;
+	.transition-duration(1s);
+}
+.animate-out .disney-prime-text{
+	left: 25%;
+	opacity:0;
+	.transition-duration(0.5s);
+}
+.disney-sub-text{
+	color:black;
+	left:0%;
+	width:35%;
+	top:40%;
+	opacity:0;
+	z-index:50;
+	-webkit-transition-property: left, opacity;
+	-moz-transition-property: left, opacity;
+	-ms-transition-property: left, opacity;
+	-o-transition-property: left, opacity;
+	transition-property: left, opacity;
+}
+.animate-in .disney-sub-text{
+	left: 9%;
+	opacity:1;
+	.transition-duration(1s);
+}
+.animate-out .disney-sub-text{
+	left:20%;
+	opacity:0;
+	.transition-duration(0.5s);
+}
+
+/* EFV transition */
+/* #efv-animate:before{
+	content:"";
+	position:absolute;
+	top:-20px;
+	left:675px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid #dfe5e8;
+	display:block;
+	width:0;
+	z-index:1;
+} */
+.efv-pic-main {
+	max-height:200px;
+	max-width:200px;
+	left:35%;
+	top: 20%;
+	width:35%;
+	opacity: 0;
+	z-index:50;
+	-webkit-transition-property: left, opacity;
+	-moz-transition-property: left, opacity;
+	-ms-transition-property: left, opacity;
+	-o-transition-property: left, opacity;
+	transition-property: left, opacity;
+}
+.animate-in .efv-pic-main{
+	left:20%;
+	opacity:1;
+	.transition-duration(1s);
+}
+.animate-out .efv-pic-main {
+	left:15%;
+	opacity:0;
+	.transition-duration(0.5s);
+}
+.efv-pic-comp-small-1 {
+	top:5%;
+}
+.efv-pic-comp-small-2{
+	top:25%;
+}
+.efv-pic-comp-small-3{
+	top:45%;
+}
+.efv-pic-comp-small-4 {
+	top:70%;
+}
+.efv-pic-comp-small-1,
+.efv-pic-comp-small-2,
+.efv-pic-comp-small-3,
+.efv-pic-comp-small-4 {
+	max-height:100px;
+	max-width:100px;
+	left: 30%;
+	width:35%;
+	opacity: 0;
+	z-index:50;
+	-webkit-transition-property: left, opacity;
+	-moz-transition-property: left, opacity;
+	-ms-transition-property: left, opacity;
+	-o-transition-property: left, opacity;
+	transition-property: left, opacity;
+}
+.animate-in .efv-pic-comp-small-1,
+.animate-in .efv-pic-comp-small-2,
+.animate-in .efv-pic-comp-small-3,
+.animate-in .efv-pic-comp-small-4{
+	left: 10%;
+	opacity:1;
+	.transition-duration(1s);
+}
+.animate-out .efv-pic-comp-small-1,
+.animate-out .efv-pic-comp-small-2,
+.animate-out .efv-pic-comp-small-3,
+.animate-out .efv-pic-comp-small-4 {
+	left:5%;
+	opacity:0;
+	.transition-duration(0.5s);
+}
+.efv-prime-text{
+	color:black;
+	left:45%;
+	width:40%;
+	top:25%;
+	opacity:0;
+	z-index:50;
+	-webkit-transition-property: top, opacity;
+	-moz-transition-property: top, opacity;
+	-ms-transition-property: top, opacity;
+	-o-transition-property: top, opacity;
+	transition-property: top, opacity;
+}
+.animate-in .efv-prime-text{
+	top: 10%;
+	opacity:1;
+	.transition-duration(1s);
+}
+.animate-out .efv-prime-text{
+	top: 0%;
+	opacity:0;
+	.transition-duration(0.5s);
+}
+.efv-sub-text{
+	color:black;
+	left:45%;
+	width:40%;
+	top:65%;
+	opacity:0;
+	z-index:50;
+	-webkit-transition-property: top, opacity;
+	-moz-transition-property: top, opacity;
+	-ms-transition-property: top, opacity;
+	-o-transition-property: top, opacity;
+	transition-property: top, opacity;
+}
+.animate-in .efv-sub-text{
+	top: 40%;
+	opacity:1;
+	.transition-duration(1s);
+}
+.animate-out .efv-sub-text{
+	top:30%;
+	opacity:0;
+	.transition-duration(0.5s);
+}
+
+/* DBF transition */
+.aiaa-logo {
+	max-height:300px;
+	max-width:600px;
+	left:80%;
+	top: 10%;
+	width:35%;
+	opacity: 0;
+	z-index:50;
+	-webkit-transition-property: left, opacity;
+	-moz-transition-property: left, opacity;
+	-ms-transition-property: left, opacity;
+	-o-transition-property: left, opacity;
+	transition-property: left, opacity;
+}
+.animate-in .aiaa-logo{
+	left:35%;
+	opacity:1;
+	.transition-duration(1s);
+}
+.animate-out .aiaa-logo {
+	left:0%;
+	opacity:0;
+	.transition-duration(0.5s);
+}
+.aiaa-prime-text{
+	color:black;
+	left:12%;
+	width:70%;
+	top:55%;
+	opacity:0;
+	z-index:50;
+	-webkit-transition-property: top, opacity;
+	-moz-transition-property: top, opacity;
+	-ms-transition-property: top, opacity;
+	-o-transition-property: top, opacity;
+	transition-property: top, opacity;
+}
+.animate-in .aiaa-prime-text{
+	top: 42%;
+	opacity:1;
+	.transition-duration(1s);
+}
+.animate-out .aiaa-prime-text{
+	top: 32%;
+	opacity:0;
+	.transition-duration(0.5s);
+}
+.aiaa-sub-text{
+	color:black;
+	left:12%;
+	width:70%;
+	top:90%;
+	opacity:0;
+	z-index:50;
+	-webkit-transition-property: top, opacity;
+	-moz-transition-property: top, opacity;
+	-ms-transition-property: top, opacity;
+	-o-transition-property: top, opacity;
+	transition-property: top, opacity;
+}
+.animate-in .aiaa-sub-text{
+	top: 67%;
+	opacity:1;
+	.transition-duration(1s);
+}
+.animate-out .aiaa-sub-text{
+	top:57%;
+	opacity:0;
+	.transition-duration(0.5s);
+}
