@@ -3,9 +3,13 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def sequence
+  def tech_pres
   end
 
-  def modern
+  def tech_resume
   end
+
+  def manage_resume
+  end
+  
 end

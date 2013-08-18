@@ -1,6 +1,10 @@
 Stroupaloop::Application.routes.draw do
   root to: 'static_pages#home'
-  
+
+  match '/techresume', to: 'static_pages#tech_resume'
+  match '/manageresume', to: 'static_pages#manage_resume'
+  match '/techpres', to: 'static_pages#tech_pres'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
