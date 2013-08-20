@@ -2,7 +2,10 @@ $(document).ready(function(){
 
     console.debug("TRAGDOR!!!");
 
-    // Google API Maps
+    //used for smooth scrolling
+    $('.nav').localScroll();
+
+    // Google Maps
     var stockholm = new google.maps.LatLng(39.288608,-76.599215);
     var parliament = new google.maps.LatLng(39.288608,-76.599215);
     var marker;
@@ -38,9 +41,6 @@ $(document).ready(function(){
 
     google.maps.event.addDomListener(window, 'load', initialize);
 
-    //used for smooth scrolling
-    $('.nav').localScroll();
-
     //initiate sequence.js
 
     var options = {
@@ -55,28 +55,28 @@ $(document).ready(function(){
     var projects = $("#projects").sequence(options).data("sequence");
 
     // jQuery slide right/left
-    jQuery.fn.extend({
-      slideRightShow: function() {
-        return this.each(function() {
-            $(this).show('slide', {direction: 'right'}, 1000);
-        });
-      },
-      slideLeftHide: function() {
-        return this.each(function() {
-          $(this).hide('slide', {direction: 'left'}, 1000);
-        });
-      },
-      slideRightHide: function() {
-        return this.each(function() {
-          $(this).hide('slide', {direction: 'right'}, 1000);
-        });
-      },
-      slideLeftShow: function() {
-        return this.each(function() {
-          $(this).show('slide', {direction: 'left'}, 1000);
-        });
-      }
-    });
+    // jQuery.fn.extend({
+    //   slideRightShow: function() {
+    //     return this.each(function() {
+    //         $(this).show('slide', {direction: 'right'}, 1000);
+    //     });
+    //   },
+    //   slideLeftHide: function() {
+    //     return this.each(function() {
+    //       $(this).hide('slide', {direction: 'left'}, 1000);
+    //     });
+    //   },
+    //   slideRightHide: function() {
+    //     return this.each(function() {
+    //       $(this).hide('slide', {direction: 'right'}, 1000);
+    //     });
+    //   },
+    //   slideLeftShow: function() {
+    //     return this.each(function() {
+    //       $(this).show('slide', {direction: 'left'}, 1000);
+    //     });
+    //   }
+    // });
 
     // engineering projects
     $('#dfi').mouseenter(function(){

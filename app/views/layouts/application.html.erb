@@ -32,11 +32,11 @@
 		<%= stylesheet_link_tag "font-awesome-ie7.min.css", media: "all" %>
 	<![endif]-->
 
-	
+	<%= yield :head %>
 
 
 </head>
-<body>
+<body <%= yield :body %>>
 
 	<!-- <ul id="nav">
 	    <li><a href="#intro" title="Next Section" id="first-bubble"><%= image_tag src="dot.png", :alt => 'Link' %></a></li>
@@ -47,7 +47,9 @@
 	</ul> -->
 
 	<%= yield %>
+
 	<%= javascript_include_tag "application" %>
+	
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 	<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

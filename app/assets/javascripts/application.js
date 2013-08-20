@@ -12,4 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require bootstrap.min
+//= require jquery.ba-hashchange.min
+//= require jquery.inview
+//= require jquery.localscroll-1.2.7-min
+//= require jquery.parallax-1.1.3
+//= require jquery.scrollTo-1.4.2-min
+//= require jquery.sequence-min
+//= require main
