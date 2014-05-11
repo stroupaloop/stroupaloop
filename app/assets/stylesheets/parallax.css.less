@@ -53,7 +53,7 @@ http://www.gnu.org/licenses/gpl.html
 	margin: 0 auto;
 	overflow:hidden;
 	padding:0;
-	padding-top:30px;
+	padding-top:50px;
 }
 
 #fifth{
@@ -156,25 +156,36 @@ http://www.gnu.org/licenses/gpl.html
 
 /* RESPONSIVE MEDIA QUERIES */
 
-/* Extra small devices (phones, up to 480px) */
-/* No media query since this is the default in Bootstrap */
-
-
-/* @media (max-width: @screen-phone-max) { } */
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-tablet) { }
-
-/* @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {  } */
-
-/* Medium devices (tablets, 992px and up) */
-@media (min-width: @screen-desktop) {
-
+/* Phones only (767px and less) */
+@media (max-width: 767px) { 
+	#second{
+		padding-top:40px;
+		height:1130px;
+		h2{
+			font-size:28px;
+		}
+		h3{
+			font-size:20px;
+			margin-top:0px;
+		}
+	}
 }
 
-/* @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {  } */
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-large-desktop) {
-
+/* Small devices only (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+	#fourth{
+		padding-top:80px;
+		h3{
+			margin-top:0px;
+		}
+	}
+	#sixth-last{
+		padding-top:25px;
+	}
+	#eighth{
+		height:910px;
+	}
+	#ninth{
+		height:765px;
+	}
 }

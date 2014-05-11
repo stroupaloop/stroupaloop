@@ -1,58 +1,55 @@
 <div id="header">
 	<div class="container">
-		<!-- have to fix once Bootstrap 3.1 comes out with nested Responsive utilities -->
-		
 		<div class="row">
-			
-			<div class="col-sm-6 col-md-6 col-lg-6">
+			<div class="col-sm-4 col-md-6 hidden-xs">
 				<p id="connect"><strong>Connect:</strong>
 					<a target="_blank" href="https://twitter.com/stroupaloop" title="Follow @stroupaloop on Twitter" id="social-media"><i class="icon-twitter icon-large"></i></a> <a target="_blank" href="https://www.facebook.com/pages/Andrew-Stroup/125661194293149" title="Lile me on Facebook" id="social-media"><i class="icon-facebook icon-large"></i></a> <a target="_blank" href="http://www.linkedin.com/pub/andrew-stroup/20/236/317" title="Connect with me on LinkedIn" id="social-media"><i class="icon-linkedin icon-large"></i></a> <a target="_blank" href="https://github.com/stroupaloop" title="Star me"><i class="icon-github icon-large" id="social-media"></i></a> <a target="_blank" href="mailto:stroupaloop@gmail.com" title="Email me" id="social-media"><i class="icon-envelope-alt icon-large"></i></a>
 				</p>
 				<p id="built">
-      		<span class="label label-info" id="built-with">Ruby on Rails</span><span class="label label-info" id="built-with">Twitter Bootstrap 3</span><span class="visible-xs"><br/></span><span class="label label-info" id="built-with">Responsive</span><span class="label label-info" id="built-with">Parallax</span><span class="label label-info" id="built-with">sequence.js</span>
+      		<span class="label label-info" id="built-with">RoR</span><span class="label label-info" id="built-with">Bootstrap 3</span><span class="visible-xs"><br/></span><span class="label label-info" id="built-with">Parallax</span><span class="label label-info" id="built-with">sequence.js</span>
       	</p>
 	    </div>	
-	    <div class="col-sm-6 col-md-6 col-lg-6 text-right">
+	    <div class="col-sm-8 col-md-6 text-right ">
 				<h1>andrew stroup{aloop}</h1>
-				<h2>enginerd. maker. innovator.</h2>
-			</div>		
+				<h2 class="hidden-xs">enginerd. maker. innovator.</h2>
+			</div>
 		</div>
 	</div>
 </div>
 <!--INTRO-->
-<div id="intro">
-    <div class="container">
-    	<div class="row">
-    		<br/>
-    		<br/>
-    		<div class="col-sm-12 col-md-12 col-lg-12 text-right">
-	        	<h2><strong>Learn more</strong><br/>
-	        		<span class="icon-stack">
-	        			<i class="icon-circle icon-stack-base icon-dark"></i>
-	        			<span class="nav">
-	        				<a href="#second" title="Next Section"><i class="icon-chevron-down first icon-large icon-light"></i></a>
-	        			</span>
-	        		</span>
-        		</h2>
-	        </div>
-	    </div>
+<div id="intro" class="hidden-xs">
+  <div class="container">
+  	<div class="row">
+  		<br/>
+  		<br/>
+  		<div class="col-sm-12 col-md-12 col-lg-12 text-right">
+        	<h2><strong>Learn more</strong><br/>
+        		<span class="icon-stack">
+        			<i class="icon-circle icon-stack-base icon-dark"></i>
+        			<span class="nav">
+        				<a href="#second" title="Next Section"><i class="icon-chevron-down first icon-large icon-light"></i></a>
+        			</span>
+        		</span>
+      		</h2>
+        </div>
     </div>
+  </div>
 </div>
 <!--DESCRIPTION-->
 <div id="second">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-4 col-sm-4 col-md-4 center" id="skill">
+			<div class="col-sm-4 col-md-4 center" id="skill">
 				<h2><i class="icon-laptop icon-4x icon-border"></i></h2>
 				<h2>en&middot;gi&middot;nerd<br/>[en-j<em>uh</em>-<strong>nurd</strong>]</h2>
 				<h3>an engineer who is<br/>self aware of his nerdiness<br/> and affinity to computers.</h3>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4 center" id="skill">
+			<div class="col-sm-4 col-md-4 center" id="skill">
 				<h2><i class="icon-wrench icon-4x icon-border"></i></h2>
 				<h2>mak&middot;er<br/>[<strong>mey</strong>-ker]</h2>
 				<h3>a person who loves to<br/>create things in their<br/>spare time.</h3>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4 center" id="skill">
+			<div class="col-sm-4 col-md-4 center" id="skill">
 				<h2><i class="icon-rocket icon-4x icon-border"></i></h2>
 				<h2>in&middot;no&middot;vat&middot;or<br/>[<strong>in</strong>-<em>uh</em>-veyt-or]</h2>
 				<h3>to introduce something new;<br/>make changes in anything<br/>already established.</h3>
@@ -69,7 +66,7 @@
 	</div>
 </div>
 <!--ENGINEERING-->
-<div id="third">
+<div id="third" class="hidden-xs">
     <div class="container">
     	<div class="row">
     		<div class="col-lg-2"></div>
@@ -88,10 +85,64 @@
 	</div>
 </div>
 <!--PROJECTS-->
-<div id="fourth">
-    <div class="container">
-    	<div class="row">
-		  <div class="col-lg-3">
+<div id="fourth" class="hidden-xs">
+	<div class="container visible-sm">
+		<div class="row">
+			<div class="col-sm-4">
+				<%= image_tag src="dfi.gif", :id => "dfi", class: "img-thumbnail"%>
+			</div>
+			<div class="col-sm-8">
+				<h3>DFI</h3>
+		    <p>Led a $100,000, international fluid power (hydraulic) consulting project for a Canadian based oil rigging company.</p>
+		  </div>
+		</div>
+		<br/>
+		<br/>
+		<div class="row">
+			<div class="col-sm-4">
+				<%= image_tag src="california-screamin.gif", :id => "cali", class: "img-thumbnail"%>
+			</div>
+			<div class="col-sm-8">
+				<h3>California Screamin'</h3>
+		    <p>A fluid power (pneumatic) consulting project for Disneyland Resorts famous rollercoaster.</p>
+		  </div>
+		</div>
+		<br/>
+		<br/>
+		<div class="row">
+			<div class="col-sm-4">
+				<%= image_tag src="EFV.gif", :id => "efv", class: "img-thumbnail"%>
+			</div>
+			<div class="col-sm-8">
+				<h3>USMC EFV</h3>
+		    <p>Led two concurrent project teams contracted by General Dynamics Amphibious Systems in support of the United States Marine Corps Expeditionary Fighting Vehicle program.</p>
+		  </div>
+		</div>
+		<br/>
+		<br/>
+		<div class="row">
+			<div class="col-sm-4">
+				<%= image_tag src="dbf-flight.gif", :id => "dbf", class: "img-thumbnail"%>
+			</div>
+			<div class="col-sm-8">
+				<h3>Design, Build, Fly</h3>	
+		    <p>Placed 1st out of 54 international teams as the Oklahoma State University chief engineer for the American Institute of Aeronatuics and Astronautics Design, Build, Fly competition.</p>
+		  </div>
+		</div>
+		<br/>
+		<br/>
+		<div class="row pull-right" id='fourth-last'>
+  		<span class="icon-stack sub">
+  			<i class="icon-circle sub icon-stack-base icon-dark"></i>
+  			<span class="nav">
+  				<a href="#fifth" title="Next Section"><i class="icon-chevron-down sub icon-large icon-light"></i></a>
+  			</span>
+  		</span>
+    </div>
+	</div>
+  <div class="container hidden-sm">
+  	<div class="row ">
+		  <div class="col-md-3">
 		    <div class="thumbnail projects">
 		      <%= image_tag src="dfi.gif", :id => "dfi"%>
 		      <div class="caption">
@@ -100,7 +151,7 @@
 		      </div>
 		    </div>
 		  </div>
-		  <div class="col-lg-3">
+		  <div class="col-md-3">
 		    <div class="thumbnail projects">
 		      <%= image_tag src="california-screamin.gif", :id => "cali"%>
 		      <div class="caption">
@@ -109,7 +160,7 @@
 		      </div>
 		    </div>
 		  </div>
-		  <div class="col-lg-3">
+		  <div class="col-md-3">
 		    <div class="thumbnail projects">
 		      <%= image_tag src="EFV.gif", :id => "efv"%>
 		      <div class="caption">
@@ -118,7 +169,7 @@
 		      </div>
 		    </div>
 		  </div>
-		  <div class="col-lg-3">
+		  <div class="col-md-3">
 		    <div class="thumbnail projects">
 		      <%= image_tag src="dbf-flight.gif", :id=>"dbf"%>
 		      <div class="caption">
@@ -130,76 +181,76 @@
 		</div>
 		<br/>
 		<br/>
-	    <div class="row">
-	        <div class="col-lg-12">
-	            <div id="projects">
-	                <ul class="sequence-canvas">
-	                	<i class="icon-chevron-left icon-4x sequence-prev" alt="Previous Frame"></i>
-	                	<i class="icon-chevron-right icon-4x sequence-next" alt="Next Frame"></i>
-	                	<li class="animate-in">
-	                    <%= image_tag src="oil-rig.png", :alt => "DFI oil rig", :class=>"dfi-oil-rig"%>
-	                    <h4 class="dfi-prime-text">Headed a $100,000, international fluid power (hydraulic) consulting project for a Canadian based oil rigging company that involved</h4>
-	                    <ul class="dfi-sub-text">
-												<li>- on-site analysis and review of multiple fluid power systems, designs, components, and issues</li>
-												<li>- dynamic modeling and simulation of systems and subsystems</li>
-												<li>- presentation of test results and recommendations</li>
-												<li>- implementation of solutions and follow-on validation</li>
-											</ul>
-	                  </li>
-                    <li>
-                      <%= image_tag src="disney-logo.png", :alt => "Disneyland Resorts Logo", :class=>"disney-logo"%>
-                      <h4 class="disney-prime-text">Supported a fluid power (pneumatic) consulting project for Disneyland Resorts, requiring</h4>
-                      <ul class="disney-sub-text">
-												<li>- collaboration with the Disneyland Resorts imagineering team on design and test plans, spanning dynamic modeling and simulation, test components, and reports</li>
-												<li>- on-site component, sub-system, and system testing</li>
-												<li>- presentation of findings and recommendations to the Disneyland Resorts engineering team</li>
-											</ul>
-	                  </li>
-	                  <li id="efv-animate">
-	                    <%= image_tag src="efv/efv-main.png", :alt => "EFV Main", :class=>"efv-pic-main"%>
-	                    <%= image_tag src="efv/efv-comp-1-small.png", :alt => "EFV Comp 1", :class=>"efv-pic-comp-small-1"%>
-	                    <%= image_tag src="efv/efv-comp-2-small.png", :alt => "EFV Comp 2", :class=>"efv-pic-comp-small-2"%>
-	                    <%= image_tag src="efv/efv-comp-3-small.png", :alt => "EFV Comp 3", :class=>"efv-pic-comp-small-3"%>
-	                    <%= image_tag src="efv/efv-comp-4-small.png", :alt => "EFV Comp 4", :class=>"efv-pic-comp-small-4"%>
-	                    <h4 class="efv-prime-text">Led two concurrent project teams contracted by General Dynamics Amphibious Systems in support of the United States Marine Corps Expeditionary Fighting Vehicle program, involving</h4>
-	                    <ul class="efv-sub-text">
-												<li>- on-site inspection and DFMEA</li>
-												<li>- dynamic modeling and simulation of fluid power (hydraulic and pneumatic) components, sub-systems, and systems</li>
-												<li>- design, fabrication, and validation of multiple test platforms and tests to characterize components, sub-systems, and systems</li>
-												<li>- presentation of findings and recommendations for implementation into system design</li>
-											</ul>
-		                </li>
-	                  <li>
-	                    <%= image_tag src="AIAAlogo.png", :alt => "AIAA Logo", :class=>"aiaa-logo"%>
-	                    <h4 class="aiaa-prime-text">1st place out of 54 international teams, Oklahoma State University chief engineer for the American Institute of Aeronatuics and Astronautics Design, Build, Fly competition. A cooperative team effort requiring</h4>
-	                    <ul class="aiaa-sub-text">
-												<li>- conceptual platform design to meet specified mission crtiera</li>
-												<li>- development of manufacturing techniques for rapid prototyping and testing</li>
-												<li>- execution of performance-rated flights against domestic international teams</li>
-											</ul>
-	                  </li>  
-	                </ul>
-	                <!-- <ul class="project-pagination">
-	                	<li><%= image_tag src="modern/tn-model1.png", alt: "DFI Story"%></li>
-	                	<li><%= image_tag src="modern/tn-model1.png", alt: "DFI Story"%></li>
-	                	<li><%= image_tag src="modern/tn-model1.png", alt: "DFI Story"%></li>
-	                	<li><%= image_tag src="modern/tn-model1.png", alt: "DFI Story"%></li>
-	                </ul> -->
-	            </div>
-	        </div>
-	    </div>
-	    <div class="row pull-right" id='fourth-last'>
-    		<span class="icon-stack sub">
-    			<i class="icon-circle sub icon-stack-base icon-dark"></i>
-    			<span class="nav">
-    				<a href="#fifth" title="Next Section"><i class="icon-chevron-down sub icon-large icon-light"></i></a>
-    			</span>
-    		</span>
+    <div class="row hidden-sm">
+      <div class="col-md-12 col-lg-12">
+        <div id="projects">
+          <ul class="sequence-canvas">
+          	<i class="icon-chevron-left icon-4x sequence-prev" alt="Previous Frame"></i>
+          	<i class="icon-chevron-right icon-4x sequence-next" alt="Next Frame"></i>
+          	<li class="animate-in">
+              <%= image_tag src="oil-rig.png", :alt => "DFI oil rig", :class=>"dfi-oil-rig"%>
+              <h4 class="dfi-prime-text">Led a $100,000, international fluid power (hydraulic) consulting project for a Canadian based oil rigging company that involved</h4>
+              <ul class="dfi-sub-text">
+								<li>- on-site analysis and review of multiple fluid power systems, designs, components, and issues</li>
+								<li>- dynamic modeling and simulation of systems and subsystems</li>
+								<li>- presentation of test results and recommendations</li>
+								<li>- implementation of solutions and follow-on validation</li>
+							</ul>
+            </li>
+            <li>
+              <%= image_tag src="disney-logo.png", :alt => "Disneyland Resorts Logo", :class=>"disney-logo"%>
+              <h4 class="disney-prime-text">A fluid power (pneumatic) consulting project for Disneyland Resorts, requiring</h4>
+              <ul class="disney-sub-text">
+								<li>- collaboration with the Disneyland Resorts imagineering team on design and test plans, spanning dynamic modeling and simulation, test components, and reports</li>
+								<li>- on-site component, sub-system, and system testing</li>
+								<li>- presentation of findings and recommendations to the Disneyland Resorts engineering team</li>
+							</ul>
+            </li>
+            <li id="efv-animate">
+              <%= image_tag src="efv/efv-main.png", :alt => "EFV Main", :class=>"efv-pic-main"%>
+              <%= image_tag src="efv/efv-comp-1-small.png", :alt => "EFV Comp 1", :class=>"efv-pic-comp-small-1"%>
+              <%= image_tag src="efv/efv-comp-2-small.png", :alt => "EFV Comp 2", :class=>"efv-pic-comp-small-2"%>
+              <%= image_tag src="efv/efv-comp-3-small.png", :alt => "EFV Comp 3", :class=>"efv-pic-comp-small-3"%>
+              <%= image_tag src="efv/efv-comp-4-small.png", :alt => "EFV Comp 4", :class=>"efv-pic-comp-small-4"%>
+              <h4 class="efv-prime-text">Led two concurrent project teams contracted by General Dynamics Amphibious Systems in support of the United States Marine Corps Expeditionary Fighting Vehicle program, involving</h4>
+              <ul class="efv-sub-text">
+								<li>- on-site inspection and DFMEA</li>
+								<li>- dynamic modeling and simulation of fluid power (hydraulic and pneumatic) components, sub-systems, and systems</li>
+								<li>- design, fabrication, and validation of multiple test platforms and tests to characterize components, sub-systems, and systems</li>
+								<li>- presentation of findings and recommendations for implementation into system design</li>
+							</ul>
+            </li>
+            <li>
+              <%= image_tag src="AIAAlogo.png", :alt => "AIAA Logo", :class=>"aiaa-logo"%>
+              <h4 class="aiaa-prime-text">Placed 1st out of 54 international teams as the Oklahoma State University chief engineer for the American Institute of Aeronatuics and Astronautics Design, Build, Fly competition. A cooperative team effort requiring</h4>
+              <ul class="aiaa-sub-text">
+								<li>- conceptual platform design to meet specified mission crtiera</li>
+								<li>- development of manufacturing techniques for rapid prototyping and testing</li>
+								<li>- execution of performance-rated flights against domestic international teams</li>
+							</ul>
+            </li>  
+          </ul>
+          <!-- <ul class="project-pagination">
+          	<li><%= image_tag src="modern/tn-model1.png", alt: "DFI Story"%></li>
+          	<li><%= image_tag src="modern/tn-model1.png", alt: "DFI Story"%></li>
+          	<li><%= image_tag src="modern/tn-model1.png", alt: "DFI Story"%></li>
+          	<li><%= image_tag src="modern/tn-model1.png", alt: "DFI Story"%></li>
+          </ul> -->
         </div>
-    </div> <!--.story-->
+      </div>
+    </div>
+    <div class="row pull-right" id='fourth-last'>
+  		<span class="icon-stack sub">
+  			<i class="icon-circle sub icon-stack-base icon-dark"></i>
+  			<span class="nav">
+  				<a href="#fifth" title="Next Section"><i class="icon-chevron-down sub icon-large icon-light"></i></a>
+  			</span>
+  		</span>
+    </div>
+  </div> <!--.story-->
 </div>
 <!--WELDING-->
-<div id="fifth">
+<div id="fifth" class="hidden-xs">
 	<div class="container">
     	<div class="row">
     		<div class="col-lg-8">
@@ -222,12 +273,12 @@
     </div>
 </div>
 <!--FOUNDERY-->
-<div id="sixth">
+<div id="sixth" class="hidden-xs">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">
 				<h2><em>Welcome to the</em></h2>
-				<h1 id="foundery-title">Baltimore Foundery</h1>
+				<h2 id="foundery-title">Baltimore Foundery</h2>
 				<h3 id="foundery-subtitle">{casting makers for great things}</h3>
 				<br/>
 				<p>Baltimore Foundery was built around the principles of community, education, and innovation. The Foundery's mission is to provide access to industrial grade tools and education, with the goal of sparking innovation within the Baltimore community. We are a 501(c)(3) non-profit organization and located between Fells Point and Harbor East, in the old Kavanaugh building on South Central Ave.<p>
@@ -258,12 +309,12 @@
     </div>
 </div>
 <!--CK LOGO-->
-<div id="seventh">
+<div id="seventh" class="hidden-xs">
 	<div class="bg">
 	</div>
 </div>
 <!--CK INFO-->
-<div id="eighth">
+<div id="eighth" class="hidden-xs">
 	<span id="anchor"></span>
 	<div class="container">
 		<div class="row">
@@ -292,7 +343,7 @@
 	</div>
 </div>
 <!-- TBBT -->
-<div id="ninth">
+<div id="ninth" class="hidden-xs">
 	<div class="bg">
 	
 		<div class="bg-tbbt">
@@ -306,6 +357,17 @@
 		    		</span>
 		        </div>
 					
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer" class="visible-xs">
+	<div class="container">
+		<div class="row center">
+			<div class="col-xs-12">
+				<p id="connect"><strong>Connect:</strong>
+					<a target="_blank" href="https://twitter.com/stroupaloop" title="Follow @stroupaloop on Twitter" id="social-media"><i class="icon-twitter icon-large"></i></a> <a target="_blank" href="https://www.facebook.com/pages/Andrew-Stroup/125661194293149" title="Lile me on Facebook" id="social-media"><i class="icon-facebook icon-large"></i></a> <a target="_blank" href="http://www.linkedin.com/pub/andrew-stroup/20/236/317" title="Connect with me on LinkedIn" id="social-media"><i class="icon-linkedin icon-large"></i></a> <a target="_blank" href="https://github.com/stroupaloop" title="Star me"><i class="icon-github icon-large" id="social-media"></i></a> <a target="_blank" href="mailto:stroupaloop@gmail.com" title="Email me" id="social-media"><i class="icon-envelope-alt icon-large"></i></a>
+				</p>
 			</div>
 		</div>
 	</div>

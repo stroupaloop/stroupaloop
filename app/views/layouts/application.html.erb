@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><%= content_for?(:title) ? yield(:title) : "Andrew Stroup | Just your typical Asian farmer" %></title>
+	<title><%= content_for?(:title) ? yield(:title) : "Andrew Stroup | just your typical asian farmer" %></title>
 	<META name="description" content="The personal landing page of Andrew Stroup."/>
 
   <%= csrf_meta_tags %>
@@ -37,14 +37,6 @@
 
 </head>
 <body <%= yield :body %>>
-
-	<!-- <ul id="nav">
-	    <li><a href="#intro" title="Next Section" id="first-bubble"><%= image_tag src="dot.png", :alt => 'Link' %></a></li>
-	    <li><a href="#second" title="Next Section"><%= image_tag src="dot.png", :alt => 'Link'%></a></li>
-	    <li><a href="#third" title="Next Section"><%= image_tag src="dot.png", :alt => 'Link'%></a></li>
-	    <li><a href="#fourth" title="Next Section"><%= image_tag src="dot.png", :alt => 'Link'%></a></li>
-	    <li><a href="#fifth" title="Next Section"><%= image_tag src="dot.png", :alt => 'Link'%></a></li>
-	</ul> -->
 
 	<%= yield %>
 
