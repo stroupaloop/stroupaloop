@@ -11,6 +11,7 @@ gem 'newrelic_rpm'
 gem 'therubyracer'
 gem 'less-rails'
 gem 'font-awesome-rails'
+gem 'cloudinary'
 
 # Gems used only for assets and not required
 # in production environments by default.

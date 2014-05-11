@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: stroupaloop
+  api_key: '654982645697115'
+  api_secret: xlA39eBXjJzHMnZW0kTw9mQ4pY4
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: stroupaloop
+  api_key: '654982645697115'
+  api_secret: xlA39eBXjJzHMnZW0kTw9mQ4pY4
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: stroupaloop
+  api_key: '654982645697115'
+  api_secret: xlA39eBXjJzHMnZW0kTw9mQ4pY4
+  enhance_image_tag: true
+  static_image_support: false
